@@ -1,0 +1,545 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat&family=Noto+Sans+SC&family=Nunito&family=Open+Sans&family=Poppins&family=Roboto+Mono&family=Source+Sans+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  position: relative;
+  font: inherit;
+  vertical-align: baseline;
+  position: relative;
+  font-family: 'Fira Code', monospace;
+}
+
+body {
+  /* background-color: rgb(21, 32, 43); */
+  font-family: 'Fira Code', monospace;
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: 'Noto Sans SC', sans-serif; */
+  /* font-family: 'Nunito', sans-serif; */
+  /* font-family: 'Open Sans', sans-serif; */
+  /* font-family: 'Poppins', sans-serif; */
+  /* font-family: 'Roboto Mono', monospace; */
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  height: 100%;
+}
+
+.container header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 2px 6px rgba(47, 83, 151, 0.1);
+  z-index: 100;
+}
+
+.container header .header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container header .header-logo .btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 0px solid #000;
+  align-items: stretch;
+  font: inherit;
+  vertical-align: baseline;
+  margin-right: 10px;
+}
+
+.container header .header-logo .btn-container button {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.container header .header-logo .btn-container button .svg-container {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.container header .header-logo .header-logo-banner {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.container header .header-logo .header-logo-banner span {
+  color: #507bfc;
+}
+
+.container header .header-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: #000;
+}
+
+.container header .header-search form {
+  font: inherit;
+  vertical-align: baseline;
+  flex-shrink: 0;
+  align-items: center;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  width: 100%;
+  border: 0px solid #000;
+  border-radius: 100vh;
+}
+
+.container header .header-search form label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: solid 1px #f5f7fa;
+  border-radius: 100vh;
+  width: 100%;
+}
+
+.container header .header-search form label input {
+  line-height: 18px;
+  background: rgba(245, 247, 250, 0.2);
+  flex: 1 0 auto;
+  overflow: hidden;
+  padding: 9px 8px;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  width: 100%;
+  height: 30px;
+  width: 700px;
+  outline: none;
+  border: 0px solid #000;
+  border-radius: 100vh;
+}
+
+.container header .profile-link-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #98a0a6;
+}
+
+.container header .profile-link-container .profile-image {
+  background-color: #fafafa;
+  border-radius: 50%;
+  display: flex;
+  flex: 0 0 auto;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.container header .profile-link-container .profile-image img {
+  vertical-align: baseline;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container header .profile-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 0px solid #000;
+  align-items: stretch;
+  font: inherit;
+  vertical-align: baseline;
+  margin-left: 10px;
+}
+
+.container header .profile-menu button {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.container header .profile-menu button .profile-svg-container {
+  cursor: pointer;
+  vertical-align: baseline;
+  border: 0 solid #000;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.container main {
+  position: relative;
+}
+
+.container main section {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 50px;
+}
+
+.container main section .team-member-category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 50px 0;
+}
+
+.container main section .team-member-category .member-category-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container main section .team-member-category .member-category-display .category-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 0px solid #000;
+  align-items: stretch;
+  font: inherit;
+  vertical-align: baseline;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background: #507bfc;
+  box-shadow: 0px 10px 20px rgba(80, 123, 252, 0.5);
+  border-radius: 3px;
+  position: relative;
+  margin-right: 20px;
+}
+
+.container main section .team-member-category .member-category-display .category-btn button {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.container main section .team-member-category .member-category-display .category-btn button .category-svg-container {
+  cursor: pointer;
+  vertical-align: baseline;
+  border: 0 solid #000;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.container main section .team-member-category .member-category-display .category-btn button .category-svg-container .rocket {
+  width: 16px;
+  height: 16px;
+  z-index: 1;
+}
+
+.container main section .team-member-category .member-category-display .team-member {
+  display: flex;
+  flex-direction: column;
+}
+
+.container main section .team-member-category .member-category-display .team-member .team-header {
+  color: #1b2437;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.container main section .team-member-category .member-category-button-container {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px #dee1e6;
+  border-radius: 100vh;
+}
+
+.container main section .team-member-category .member-category-button-container button {
+  width: 126px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #94969a;
+  outline: none;
+  border: 0px solid #000;
+  text-align: center;
+  border-radius: 100vh;
+  background: 0 0;
+}
+
+.container main section .team-member-category .member-category-button-container .member-category-button {
+  background: #507bfc;
+  box-shadow: 0px 10px 20px rgba(80, 123, 252, 0.5);
+  color: #ffffff;
+}
+
+.container main section .team-member-category .member-category-button-container .btn-style {
+  margin-right: 10px;
+}
+
+.container main section .members-display {
+  display: grid;
+  align-items: center;
+  -ms-grid-column: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.container main section .members-display .add-list {
+  background: #ffffff;
+  box-shadow: 0px 2px 6px rgba(47, 83, 151, 0.1);
+  padding: 15px 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.container main section .members-display .add-list .add-new-member {
+  width: 100%;
+  color: #98a0a6;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.container main section .members-display .add-list .avatar-container {
+  padding: 20px 0;
+}
+
+.container main section .members-display .add-list .avatar-container .avatar-display {
+  background-color: #fafafa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  overflow: hidden;
+  width: 70px;
+  height: 70px;
+  background: #ffffff;
+  margin: 0 auto;
+  box-shadow: 0px 2px 6px rgba(47, 83, 151, 0.1);
+}
+
+.container main section .members-display .add-list .avatar-container .avatar-display img {
+  vertical-align: baseline;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container main section .members-display .add-list .add-name {
+  color: #1b2437;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.container main section .members-display .add-list .add-email {
+  color: #98a0a6;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.container main section .members-display .add-list .add-btn-container {
+  padding: 10px 0;
+}
+
+.container main section .members-display .add-list .add-btn-container button {
+  width: 154px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #94969a;
+  outline: none;
+  border: 0px solid #000;
+  text-align: center;
+  border-radius: 100vh;
+  background: 0 0;
+  background: #507bfc;
+  box-shadow: 0px 10px 20px rgba(80, 123, 252, 0.5);
+  color: #ffffff;
+}
+
+.container main section .members-display .member-list {
+  background: #ffffff;
+  box-shadow: 0px 2px 6px rgba(47, 83, 151, 0.1);
+  padding: 15px 10px;
+  text-align: center;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container main section .members-display .member-list .member-header-btn-container {
+  padding: 5px 0;
+}
+
+.container main section .members-display .member-list .member-header-btn-container .member-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 0px solid #000;
+  align-items: stretch;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.container main section .members-display .member-list .member-header-btn-container .member-btn-container button {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.container main section .members-display .member-list .member-header-btn-container .member-btn-container button .member-svg-container {
+  cursor: pointer;
+  vertical-align: baseline;
+  border: 0 solid #000;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.container main section .members-display .member-list .member-user-image-container {
+  padding: 10px 0;
+}
+
+.container main section .members-display .member-list .member-user-image-container .member-user-image {
+  background-color: #fafafa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  overflow: hidden;
+  width: 110px;
+  height: 110px;
+  background: #ffffff;
+  box-shadow: 0px 2px 6px rgba(47, 83, 151, 0.1);
+  margin: 0 auto;
+}
+
+.container main section .members-display .member-list .member-name {
+  color: #1b2437;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.container main section .members-display .member-list .member-email {
+  color: #98a0a6;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.container main section .members-display .member-list .member-footer-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.container main section .members-display .member-list .member-footer-btn .member-footer-btn-container {
+  width: 100%;
+}
+
+.container main section .members-display .member-list .member-footer-btn .member-footer-btn-container button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #94969a;
+  outline: none;
+  border: 0px solid #000;
+  text-align: center;
+  border-radius: 100vh;
+  background: 0 0;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.container main section .members-display .member-list .member-footer-btn .member-footer-btn-container .member-btn-styled {
+  background: #507bfc;
+  box-shadow: 0px 10px 20px rgba(80, 123, 252, 0.5);
+  color: #ffffff;
+}
+
+.container main section .members-display .member-list .member-footer-btn .member-footer-btn-container .member-btn-styled .member-svg-container .svg {
+  fill: white;
+}
+/*# sourceMappingURL=styles.css.map */
